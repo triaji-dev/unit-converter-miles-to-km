@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+ <body>
+    <div class="container">
+      <h1>Unit Converter</h1>
+      
+      <div class="controls-group"> 
+        <input type="number" placeholder="Enter value" id="userInput" />
+        <select id="unit">
+          <option value="milesToKm">Miles to Kilometers</option>
+          <option value="kmToMiles">Kilometers to Miles</option>
+        </select>
+        <button onclick="convert()">Convert</button>
+      </div>
+      
+      <div class="result">
+        Result
+        <span class="result-value" id="resultElement">0</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</html>
